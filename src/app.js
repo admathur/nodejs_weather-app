@@ -15,17 +15,17 @@ const publicDirectoryPath = path.join(__dirname, '../public')
 
 app.use(express.static(publicDirectoryPath))
 
-app.get('', (req, res) => {
-    res.send('<b>Hello there!!<b>')
-})
+// app.get('', (req, res) => {
+//     res.send('<b>Hello there!!<b>')
+// })
 
-app.get('/help', (req, res) => {
-    res.send('I am here to help. What can I do for you today?')
-})
+// app.get('/help', (req, res) => {
+//     res.send('I am here to help. What can I do for you today?')
+// })
 
-app.get('/about', (req, res) => {
-    res.send('hmm... what can I say about myself, except that <b>I AM AWESOME!!<b>')
-})
+// app.get('/about', (req, res) => {
+//     res.send('hmm... what can I say about myself, except that <b>I AM AWESOME!!<b>')
+// })
 
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
